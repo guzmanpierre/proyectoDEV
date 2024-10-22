@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - pag3.ok</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión General - Pedro Guzmán</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vision-general.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="page-wrapper">
+        <header>
+    <div class="header-left">
+        <a href="index.html">
+            <img src="https://live.staticflickr.com/65535/54072830687_5fa1720fe1_o.png" alt="Logo de la empresa">
+        </a>
+        <h1>Pedro Guzmán Pineda</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfil_profesional.html">Perfil Profesional</a></li>
+            <li><a href="vision_gral.html">Visión General</a></li>
+            <li><a href="sistema_ual.html">Sistema UAL</a></li>
+            <li><a href="laboratorios.html">Laboratorios Virtuales</a></li>
+            <li><a href="ual_herramientas.html">UAL Herramientas</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+        
+        <main class="page-main mt-20 container mx-auto px-4">
+            <section class="intro-section text-center py-12 bg-gradient-to-r from-blue-600 to-purple-600">
+                <h2 class="text-4xl font-bold text-black mb-4">Visión General de Contribuciones</h2>
+                <p class="text-lg text-white">Explorando los retos actuales y futuros de la educación en línea en México, con un enfoque en las contribuciones y proyectos del IPN.</p>
+            </section>
+
+            <div class="carousel my-8">
+                <img src="https://live.staticflickr.com/65535/54080933222_739c3eb615_z.jpg" alt="Imagen 1" class="carousel-image">
+                <img src="https://live.staticflickr.com/65535/54082134134_6db3a93c5a.jpg" alt="Imagen 2" class="carousel-image hidden">
+                <img src="https://live.staticflickr.com/65535/54082267740_fa5fea1f4e.jpg" alt="Imagen 3" class="carousel-image hidden">
+                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button next">&gt;</button>
+            </div>
+
+            <section class="bg-white p-6 rounded-lg shadow-lg mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">Retos Actuales de la Educación en Línea en México 2023-2024</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Estadísticas Clave</h3>
+                        <ul class="list-disc pl-5 text-sm">
+                            <li>66.4% de hogares en México tienen conexión a internet (2023)</li>
+                            <li>4,990,922 estudiantes matriculados en educación superior (2022-2023)</li>
+                            <li>184,386 estudiantes atendidos por el IPN en 2021-2022</li>
+                            <li>6.5% tasa de abandono escolar en educación superior (2021-2022)</li>
+                            <li>85% de instituciones planean mantener modelos híbridos o en línea</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Retos Principales</h3>
+                        <ul class="list-disc pl-5 text-sm">
+                            <li>Cerrar la brecha digital: 33.6% de hogares aún sin internet</li>
+                            <li>Adaptar programas a modalidades híbridas y en línea</li>
+                            <li>Mantener la calidad educativa en entornos virtuales</li>
+                            <li>Fomentar la retención estudiantil en programas en línea</li>
+                            <li>Desarrollar competencias digitales en docentes y estudiantes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-center">
+                    <div class="w-full max-w-md">
+                        <h3 class="text-lg font-semibold mb-2 text-center">Hogares con Internet en México (2023)</h3>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+                <p class="mt-4 text-xs text-gray-600 text-center">
+                    Fuentes: INEGI ENDUTIH (2023), ANUIES (2022-2023), IPN Informe de Autoevaluación (2022), SEP (2022-2023), Observatorio de Innovación Educativa (2023)
+                </p>
+            </section>
+
+            <div class="carousel my-8">
+                <img src="https://live.staticflickr.com/65535/54082267955_16a304c31c_z.jpg" alt="Imagen 4" class="carousel-image">
+                <img src="https://live.staticflickr.com/65535/54081806551_7b3a6e0fc4_z.jpg" alt="Imagen 5" class="carousel-image hidden">
+                <img src="https://live.staticflickr.com/65535/54081808036_64d50a8df4_k.jpg" alt="Imagen 6" class="carousel-image hidden">
+                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button next">&gt;</button>
+            </div>
+
+            <section class="bg-white p-6 rounded-lg shadow-lg mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">Proyecto DEV-IPN: Hacia el Rechazo Cero 2025</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Objetivos del Proyecto</h3>
+                        <ul class="list-disc pl-5 text-sm">
+                            <li>Lograr "rechazo cero" en admisiones para 2025</li>
+                            <li>Aumentar la oferta de Unidades de Aprendizaje en Línea (UAL)</li>
+                            <li>Capacitar al 100% de los docentes en educación en línea</li>
+                            <li>Reducir la saturación de unidades académicas presenciales</li>
+                            <li>Mejorar la retención estudiantil en programas virtuales</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Estrategias Clave</h3>
+                        <ul class="list-disc pl-5 text-sm">
+                            <li>Desarrollo acelerado de nuevas UAL</li>
+                            <li>Implementación de programas de capacitación docente intensivos</li>
+                            <li>Inversión en infraestructura tecnológica</li>
+                            <li>Creación de sistemas de apoyo estudiantil en línea</li>
+                            <li>Colaboración con industria para asegurar relevancia curricular</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-center">
+                    <div class="w-full max-w-2xl">
+                        <h3 class="text-lg font-semibold mb-2 text-center">Proyección de Capacitación Docente y Saturación de UA</h3>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-center">
+                    Nota: Los datos de proyección son estimaciones basadas en tendencias actuales y objetivos del proyecto DEV-IPN.
+                </p>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.facebook.com/guzman.pierre?locale=es_LA" aria-label="Facebook" class="hover:text-blue-400">
+                        <img src="https://i.ibb.co/x7P24fL/facebook.png" alt="Facebook" class="w-6 h-6">
+                    </a>
+                    <a href="https://twitter.com/guzmanpierre" aria-label="Twitter" class="hover:text-blue-400">
+                        <img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="Twitter" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com/pedro.guzman.oficial/" aria-label="Instagram" class="hover:text-pink-400">
+                        <img src="https://i.ibb.co/ySwtH4B/instagram.png" alt="Instagram" class="w-6 h-6">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="vision-general.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
